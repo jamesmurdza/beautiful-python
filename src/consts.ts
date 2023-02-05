@@ -1,17 +1,16 @@
 export const SITE = {
-	title: 'Documentation',
+	title: 'Beautiful Python',
 	description: 'Your website description.',
 	defaultLanguage: 'en-us',
 } as const;
 
 export const OPEN_GRAPH = {
 	image: {
-		src: 'https://github.com/withastro/astro/blob/main/assets/social/banner-minimal.png?raw=true',
+		src: 'https://emoji.aranja.com/static/emoji-data/img-apple-160/1f40d.png',
 		alt:
-			'astro logo on a starry expanse of space,' +
-			' with a purple saturn-like planet floating in the right foreground',
+			'snek',
 	},
-	twitter: 'astrodotbuild',
+	twitter: 'jamesmurdza',
 };
 
 export const KNOWN_LANGUAGES = {
@@ -36,11 +35,9 @@ export type Sidebar = Record<
 >;
 export const SIDEBAR: Sidebar = {
 	en: {
-		'Section Header': [
-			{ text: 'Introduction', link: 'en/introduction' },
-			{ text: 'Page 2', link: 'en/page-2' },
-			{ text: 'Page 3', link: 'en/page-3' },
+		'Chapters': [
+			{ text: 'Introduction', link: 'introduction' },
+			{ text: 'Lists and sequences', link: 'lists' },
 		],
-		'Another Section': [{ text: 'Page 4', link: 'en/page-4' }],
 	},
 };

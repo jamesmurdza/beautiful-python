@@ -23,15 +23,17 @@ const lang = getLanguageFromURL(currentPage);
 		</div>
 		<div class="logo flex">
 			<a href="/">
-				<AstroLogo size={40} />
+				<AstroLogo size={35} />
 				<h1>{SITE.title ?? 'Documentation'}</h1>
 			</a>
 		</div>
 		<div style="flex-grow: 1;"></div>
 		{KNOWN_LANGUAGE_CODES.length > 1 && <LanguageSelect lang={lang} client:idle />}
+		<!--
 		<div class="search-item">
 			<Search client:idle />
 		</div>
+		-->
 	</nav>
 </header>
 
