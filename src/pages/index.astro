@@ -1,5 +1,9 @@
-<script is:inline>
+---
+let base = import.meta.env.BASE_URL;
+---
+
+<script is:inline define:vars={{ base }}>
 	// Redirect your homepage to the first page of documentation.
 	// If you have a landing page, remove this script and add it here!
-	window.location.pathname = `/introduction`;
+	window.location.pathname = `${base}introduction`;
 </script>

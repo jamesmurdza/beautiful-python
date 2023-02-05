@@ -8,5 +8,5 @@ const { size } = Astro.props;
 <img
 	class="logo"
 	height={size}
-	src="/python.png"
+	src=`${import.meta.env.BASE_URL}python.png`
 />
