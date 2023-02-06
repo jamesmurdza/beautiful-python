@@ -18,9 +18,9 @@ export const KNOWN_LANGUAGES = {
 } as const;
 export const KNOWN_LANGUAGE_CODES = Object.values(KNOWN_LANGUAGES);
 
-export const GITHUB_EDIT_URL = `https://github.com/withastro/astro/tree/main/examples/docs`;
+export const GITHUB_EDIT_URL = `https://github.com/jamesmurdza/beautiful-python/tree/main`;
 
-export const COMMUNITY_INVITE_URL = `https://astro.build/chat`;
+//export const COMMUNITY_INVITE_URL = `https://astro.build/chat`;
 
 // See "Algolia" section of the README for more information.
 export const ALGOLIA = {
@@ -36,8 +36,16 @@ export type Sidebar = Record<
 export const SIDEBAR: Sidebar = {
 	en: {
 		'Chapters': [
-			{ text: 'Introduction', link: 'introduction' },
-			{ text: 'Lists and sequences', link: 'lists' },
+			{ text: '1. Introduction', link: 'introduction' },
+			{ text: '2. Basics', link: 'basics' },
+			{ text: '3. Lists', link: 'lists' },
+			{ text: '4. Visualization', link: 'visualization' },
+			{ text: '5. Serialization', link: 'serialization' },
+			/*{ text: '5. HTTP', link: 'requests' },
+			{ text: '6. REST APIs', link: 'rest' },
+			{ text: '7. Email', link: 'email' },
+			{ text: '8. Scraping', link: 'scraping' },
+			{ text: '9. Crawling', link: 'scraping' },*/
 		],
 	},
 };
